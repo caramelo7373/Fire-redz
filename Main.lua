@@ -12,52 +12,52 @@ local redzlib = {
 	Themes = {
 		Darker = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 140, 0)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 140, 0)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 140, 0))
 			}),
-			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
-			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(88, 101, 242),
-			["Color Text"] = Color3.fromRGB(243, 243, 243),
-			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+			["Color Hub 2"] = Color3.fromRGB(255, 140, 0),
+			["Color Stroke"] = Color3.fromRGB(255, 140, 0),
+			["Color Theme"] = Color3.fromRGB(255, 140, 0),
+			["Color Text"] = Color3.fromRGB(255, 140, 0),
+			["Color Dark Text"] = Color3.fromRGB(255, 140, 0)
 		},
 		Dark = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)),
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 140, 0)),
 				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(47.5, 47.5, 47.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(40, 40, 40))
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 140, 0))
 			}),
-			["Color Hub 2"] = Color3.fromRGB(45, 45, 45),
-			["Color Stroke"] = Color3.fromRGB(65, 65, 65),
-			["Color Theme"] = Color3.fromRGB(65, 150, 255),
-			["Color Text"] = Color3.fromRGB(245, 245, 245),
-			["Color Dark Text"] = Color3.fromRGB(190, 190, 190)
+			["Color Hub 2"] = Color3.fromRGB(255, 140, 0),
+			["Color Stroke"] = Color3.fromRGB(255, 140, 0),
+			["Color Theme"] = Color3.fromRGB(255, 140, 0),
+			["Color Text"] = Color3.fromRGB(255, 140, 0),
+			["Color Dark Text"] = Color3.fromRGB(255, 140, 0)
 		},
 		Purple = {
         Fire = {
             ["Color Hub 1"] = ColorSequence.new({
-                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)),
-                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(200, 0, 0)),
-                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))
+                ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 140, 0)),
+                ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 140, 0)),
+                ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 140, 0))
             }),
-            ["Color Hub 2"] = Color3.fromRGB(180, 0, 0),
-            ["Color Stroke"] = Color3.fromRGB(100, 0, 0),
-            ["Color Theme"] = Color3.fromRGB(255, 255, 0),
-            ["Color Text"] = Color3.fromRGB(255, 255, 255),
-            ["Color Dark Text"] = Color3.fromRGB(200, 200, 200)
+            ["Color Hub 2"] = Color3.fromRGB(255, 140, 0),
+            ["Color Stroke"] = Color3.fromRGB(255, 140, 0),
+            ["Color Theme"] = Color3.fromRGB(255, 140, 0),
+            ["Color Text"] = Color3.fromRGB(255, 140, 0),
+            ["Color Dark Text"] = Color3.fromRGB(255, 140, 0)
         },
 
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 140, 0)),
 				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(27.5, 25, 30))
 			}),
-			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
-			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(150, 0, 255),
-			["Color Text"] = Color3.fromRGB(240, 240, 240),
-			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
+			["Color Hub 2"] = Color3.fromRGB(255, 140, 0),
+			["Color Stroke"] = Color3.fromRGB(255, 140, 0),
+			["Color Theme"] = Color3.fromRGB(255, 140, 0),
+			["Color Text"] = Color3.fromRGB(255, 140, 0),
+			["Color Dark Text"] = Color3.fromRGB(255, 140, 0)
 		}
 	},
 	Info = {
@@ -2115,7 +2115,7 @@ function redzlib:MakeWindow(Configs)
 			local DropFrame = Create("Frame", NoClickFrame, {
 				Size = UDim2.new(SelectedFrame.Size.X, 0, 0),
 				BackgroundTransparency = 0.1,
-				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				BackgroundColor3 = Color3.fromRGB(255, 140, 0),
 				AnchorPoint = Vector2.new(0, 1),
 				Name = "DropdownFrame",
 				ClipsDescendants = true,
@@ -2148,7 +2148,7 @@ function redzlib:MakeWindow(Configs)
 				WaitClick = true
 				CreateTween({Arrow, "Rotation", 0, 0.2})
 				CreateTween({DropFrame, "Size", UDim2.new(0, 152, 0, 0), 0.2, true})
-				CreateTween({Arrow, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2})
+				CreateTween({Arrow, "ImageColor3", Color3.fromRGB(255, 140, 0), 0.2})
 				Arrow.Image = "rbxassetid://10709791523"
 				NoClickFrame.Visible = false
 				WaitClick = false
@@ -2177,7 +2177,7 @@ function redzlib:MakeWindow(Configs)
 				WaitClick = true
 				if NoClickFrame.Visible then
 					Arrow.Image = "rbxassetid://10709791523"
-					CreateTween({Arrow, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2})
+					CreateTween({Arrow, "ImageColor3", Color3.fromRGB(255, 140, 0), 0.2})
 					CreateTween({DropFrame, "Size", UDim2.new(0, 152, 0, 0), 0.2, true})
 					NoClickFrame.Visible = false
 				else
@@ -2449,7 +2449,7 @@ function redzlib:MakeWindow(Configs)
 			
 			local SliderIcon = Create("Frame", SliderBar, {
 				Size = UDim2.new(0, 6, 0, 12),
-				BackgroundColor3 = Color3.fromRGB(220, 220, 220),
+				BackgroundColor3 = Color3.fromRGB(255, 140, 0),
 				Position = UDim2.fromScale(0.3, 0.5),
 				AnchorPoint = Vector2.new(0.5, 0.5),
 				BackgroundTransparency = 0.2
@@ -2600,7 +2600,7 @@ function redzlib:MakeWindow(Configs)
 			TextBoxInput.FocusLost:Connect(Input)Input()
 			
 			TextBoxInput.FocusLost:Connect(function()
-				CreateTween({Pencil, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2})
+				CreateTween({Pencil, "ImageColor3", Color3.fromRGB(255, 140, 0), 0.2})
 			end)
 			TextBoxInput.Focused:Connect(function()
 				CreateTween({Pencil, "ImageColor3", Theme["Color Theme"], 0.2})
@@ -2626,7 +2626,7 @@ function redzlib:MakeWindow(Configs)
 			local InviteLabel = Create("TextLabel", InviteHolder, {
 				Size = UDim2.new(1, 0, 0, 15),
 				Position = UDim2.new(0, 5),
-				TextColor3 = Color3.fromRGB(40, 150, 255),
+				TextColor3 = Color3.fromRGB(255, 140, 0),
 				Font = Enum.Font.GothamBold,
 				TextXAlignment = "Left",
 				BackgroundTransparency = 1,
@@ -2679,8 +2679,8 @@ function redzlib:MakeWindow(Configs)
 				Text = "Join",
 				Font = Enum.Font.GothamBold,
 				TextSize = 12,
-				TextColor3 = Color3.fromRGB(220, 220, 220),
-				BackgroundColor3 = Color3.fromRGB(50, 150, 50)
+				TextColor3 = Color3.fromRGB(255, 140, 0),
+				BackgroundColor3 = Color3.fromRGB(255, 140, 0)
 			})Make("Corner", JoinButton, UDim.new(0, 5))
 			
 			local ClickDelay
@@ -2691,13 +2691,13 @@ function redzlib:MakeWindow(Configs)
 				ClickDelay = true
 				SetProps(JoinButton, {
 					Text = "Copied to Clipboard",
-					BackgroundColor3 = Color3.fromRGB(100, 100, 100),
-					TextColor3 = Color3.fromRGB(150, 150, 150)
+					BackgroundColor3 = Color3.fromRGB(255, 140, 0),
+					TextColor3 = Color3.fromRGB(255, 140, 0)
 				})task.wait(5)
 				SetProps(JoinButton, {
 					Text = "Join",
-					BackgroundColor3 = Color3.fromRGB(50, 150, 50),
-					TextColor3 = Color3.fromRGB(220, 220, 220)
+					BackgroundColor3 = Color3.fromRGB(255, 140, 0),
+					TextColor3 = Color3.fromRGB(255, 140, 0)
 				})ClickDelay = false
 			end)
 			
